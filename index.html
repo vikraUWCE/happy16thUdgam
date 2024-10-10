@@ -11,6 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             background-color: black;
             overflow: hidden;
         }
@@ -21,7 +22,16 @@
             text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
             animation: glow 1.5s infinite alternate;
             z-index: 10;
-            position: absolute;
+            position: relative;
+        }
+
+        h2 {
+            color: #00ff6b;
+            font-size: 2rem;
+            text-shadow: 0 0 10px #00ff6b, 0 0 20px #00ff6b;
+            margin-top: 10px;
+            z-index: 10;
+            position: relative;
         }
 
         @keyframes glow {
